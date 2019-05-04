@@ -6,10 +6,10 @@ function addElementToBeginningOfArray(arr, elem){
 }
 
 function destructivelyAddElementToBeginningOfArray(arr, elem){
-  console.log(arr);
+  console.log('Beginning arr: ', arr);
   let arr1 = arr.unshift(elem);
-  console.log(arr);
-  console.log(arr1);
+  console.log('Unshifted arr: ', arr);
+  console.log('New arr: ', arr1);
   return arr1;
 }
 
@@ -48,4 +48,4 @@ function removeElementFromEndOfArray(arr){
 }
 
 
-destructivelyAddElementToBeginningOfArray([1,2,3]);
+destructivelyAddElementToBeginningOfArray([1,2,3], 5);
